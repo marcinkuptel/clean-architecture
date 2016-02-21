@@ -10,4 +10,9 @@ import Foundation
 
 class FilmRouter {
     
+    class func createFilmViewController() -> FilmViewController {
+        let controller = FilmViewController()
+        return controller
+    }
+    
 }
