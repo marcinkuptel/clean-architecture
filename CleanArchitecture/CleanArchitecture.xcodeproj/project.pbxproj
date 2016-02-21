@@ -17,6 +17,7 @@
 		093064C21C7A551800E80F76 /* FilmViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064C11C7A551800E80F76 /* FilmViewProtocol.swift */; };
 		093064C51C7A566600E80F76 /* FilmInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064C41C7A566600E80F76 /* FilmInteractor.swift */; };
 		093064C71C7A568800E80F76 /* FilmPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064C61C7A568800E80F76 /* FilmPresenterProtocol.swift */; };
+		093064CA1C7A572200E80F76 /* FilmGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064C91C7A572200E80F76 /* FilmGateway.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		093064C11C7A551800E80F76 /* FilmViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmViewProtocol.swift; path = Source/Films/View/FilmViewProtocol.swift; sourceTree = "<group>"; };
 		093064C41C7A566600E80F76 /* FilmInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmInteractor.swift; path = Source/Films/Interactor/FilmInteractor.swift; sourceTree = "<group>"; };
 		093064C61C7A568800E80F76 /* FilmPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmPresenterProtocol.swift; path = Source/Films/Presenter/FilmPresenterProtocol.swift; sourceTree = "<group>"; };
+		093064C91C7A572200E80F76 /* FilmGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmGateway.swift; path = Source/Films/Gateway/FilmGateway.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		093064B81C7A528000E80F76 /* Films */ = {
 			isa = PBXGroup;
 			children = (
+				093064C81C7A571200E80F76 /* Gateway */,
 				093064C31C7A565400E80F76 /* Interactor */,
 				093064BE1C7A542400E80F76 /* Presenter */,
 				093064BB1C7A53A200E80F76 /* Router */,
@@ -125,6 +128,14 @@
 				093064C41C7A566600E80F76 /* FilmInteractor.swift */,
 			);
 			name = Interactor;
+			sourceTree = "<group>";
+		};
+		093064C81C7A571200E80F76 /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				093064C91C7A572200E80F76 /* FilmGateway.swift */,
+			);
+			name = Gateway;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 				093064C21C7A551800E80F76 /* FilmViewProtocol.swift in Sources */,
 				093064C01C7A543700E80F76 /* FilmPresenter.swift in Sources */,
 				093064C51C7A566600E80F76 /* FilmInteractor.swift in Sources */,
+				093064CA1C7A572200E80F76 /* FilmGateway.swift in Sources */,
 				093064BD1C7A53B400E80F76 /* FilmRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
