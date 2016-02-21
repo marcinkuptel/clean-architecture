@@ -16,6 +16,7 @@
 		093064C01C7A543700E80F76 /* FilmPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064BF1C7A543700E80F76 /* FilmPresenter.swift */; };
 		093064C21C7A551800E80F76 /* FilmViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064C11C7A551800E80F76 /* FilmViewProtocol.swift */; };
 		093064C51C7A566600E80F76 /* FilmInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064C41C7A566600E80F76 /* FilmInteractor.swift */; };
+		093064C71C7A568800E80F76 /* FilmPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064C61C7A568800E80F76 /* FilmPresenterProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		093064BF1C7A543700E80F76 /* FilmPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmPresenter.swift; path = Source/Films/Presenter/FilmPresenter.swift; sourceTree = "<group>"; };
 		093064C11C7A551800E80F76 /* FilmViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmViewProtocol.swift; path = Source/Films/View/FilmViewProtocol.swift; sourceTree = "<group>"; };
 		093064C41C7A566600E80F76 /* FilmInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmInteractor.swift; path = Source/Films/Interactor/FilmInteractor.swift; sourceTree = "<group>"; };
+		093064C61C7A568800E80F76 /* FilmPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmPresenterProtocol.swift; path = Source/Films/Presenter/FilmPresenterProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				093064BF1C7A543700E80F76 /* FilmPresenter.swift */,
+				093064C61C7A568800E80F76 /* FilmPresenterProtocol.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093064C71C7A568800E80F76 /* FilmPresenterProtocol.swift in Sources */,
 				093064A91C7A520C00E80F76 /* FilmViewController.swift in Sources */,
 				093064A71C7A520C00E80F76 /* AppDelegate.swift in Sources */,
 				093064C21C7A551800E80F76 /* FilmViewProtocol.swift in Sources */,

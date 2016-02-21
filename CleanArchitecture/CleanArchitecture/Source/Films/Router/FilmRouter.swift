@@ -14,7 +14,9 @@ class FilmRouter {
     
     class func createFilmViewController() -> FilmViewController {
         let router = FilmRouter()
-        let presenter = FilmPresenter(router: router)
+        let interactor = FilmInteractor()
+        let presenter = FilmPresenter(router: router, interactor: interactor)
+        interactor.presenter = presenter
         let controller = FilmViewController(presenter: presenter)
         presenter.view = controller
         router.controller = controller

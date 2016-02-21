@@ -1,5 +1,5 @@
 //
-//  FilmInteractor.swift
+//  FilmPresenterProtocol.swift
 //  CleanArchitecture
 //
 //  Created by Marcin Kuptel on 21/02/2016.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-class FilmInteractor {
-    weak var presenter: FilmPresenterProtocol!
+protocol FilmPresenterProtocol: class {
+    
 }
