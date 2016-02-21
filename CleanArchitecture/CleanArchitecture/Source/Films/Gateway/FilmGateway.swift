@@ -13,5 +13,7 @@ class FilmGateway {
 }
 
 extension FilmGateway: FilmGatewayProtocol {
-    
+    func fetchNominatedFilms() {
+        
+    }
 }

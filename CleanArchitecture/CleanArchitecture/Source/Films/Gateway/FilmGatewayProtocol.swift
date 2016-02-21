@@ -9,5 +9,5 @@
 import Foundation
 
 protocol FilmGatewayProtocol: class {
-    
+    func fetchNominatedFilms()
 }

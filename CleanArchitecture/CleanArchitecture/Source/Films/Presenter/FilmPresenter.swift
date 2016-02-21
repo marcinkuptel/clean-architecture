@@ -19,7 +19,7 @@ class FilmPresenter {
     }
     
     func viewDidLoad(){
-        
+        interactor.fetchNominatedFilms()
     }
 }
 

@@ -15,4 +15,8 @@ class FilmInteractor {
     init(gateway g: FilmGatewayProtocol){
         gateway = g
     }
+    
+    func fetchNominatedFilms(){
+        gateway.fetchNominatedFilms()
+    }
 }
