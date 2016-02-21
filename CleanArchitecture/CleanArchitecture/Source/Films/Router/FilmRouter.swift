@@ -10,10 +10,14 @@ import Foundation
 
 class FilmRouter {
     
+    weak var controller: FilmViewController!
+    
     class func createFilmViewController() -> FilmViewController {
-        let presenter = FilmPresenter()
+        let router = FilmRouter()
+        let presenter = FilmPresenter(router: router)
         let controller = FilmViewController(presenter: presenter)
         presenter.view = controller
+        router.controller = controller
         return controller
     }
     

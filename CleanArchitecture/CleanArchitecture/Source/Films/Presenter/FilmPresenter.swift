@@ -10,4 +10,9 @@ import Foundation
 
 class FilmPresenter {
     weak var view: FilmViewProtocol!
+    private let router: FilmRouter
+    
+    init(router r: FilmRouter){
+        router = r
+    }
 }
