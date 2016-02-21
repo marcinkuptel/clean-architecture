@@ -25,6 +25,7 @@ class FilmViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createAndAddTableView()
+        presenter.viewDidLoad()
     }
 
     override func didReceiveMemoryWarning() {

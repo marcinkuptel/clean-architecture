@@ -17,6 +17,10 @@ class FilmPresenter {
         router = r
         interactor = i
     }
+    
+    func viewDidLoad(){
+        
+    }
 }
 
 extension FilmPresenter: FilmPresenterProtocol {
