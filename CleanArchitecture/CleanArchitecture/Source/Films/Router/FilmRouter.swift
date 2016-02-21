@@ -11,7 +11,8 @@ import Foundation
 class FilmRouter {
     
     class func createFilmViewController() -> FilmViewController {
-        let controller = FilmViewController()
+        let presenter = FilmPresenter()
+        let controller = FilmViewController(presenter: presenter)
         return controller
     }
     
