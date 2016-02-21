@@ -13,6 +13,7 @@ class FilmRouter {
     class func createFilmViewController() -> FilmViewController {
         let presenter = FilmPresenter()
         let controller = FilmViewController(presenter: presenter)
+        presenter.view = controller
         return controller
     }
     

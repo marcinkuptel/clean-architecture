@@ -1,5 +1,5 @@
 //
-//  FilmPresenter.swift
+//  FilmViewProtocol.swift
 //  CleanArchitecture
 //
 //  Created by Marcin Kuptel on 21/02/2016.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-class FilmPresenter {
-    weak var view: FilmViewProtocol!
+protocol FilmViewProtocol: class {
+    
 }

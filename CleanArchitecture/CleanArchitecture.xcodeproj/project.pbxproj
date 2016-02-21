@@ -14,6 +14,7 @@
 		093064B11C7A520C00E80F76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093064AF1C7A520C00E80F76 /* LaunchScreen.storyboard */; };
 		093064BD1C7A53B400E80F76 /* FilmRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064BC1C7A53B400E80F76 /* FilmRouter.swift */; };
 		093064C01C7A543700E80F76 /* FilmPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064BF1C7A543700E80F76 /* FilmPresenter.swift */; };
+		093064C21C7A551800E80F76 /* FilmViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064C11C7A551800E80F76 /* FilmViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		093064B21C7A520C00E80F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		093064BC1C7A53B400E80F76 /* FilmRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmRouter.swift; path = Source/Films/Router/FilmRouter.swift; sourceTree = "<group>"; };
 		093064BF1C7A543700E80F76 /* FilmPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmPresenter.swift; path = Source/Films/Presenter/FilmPresenter.swift; sourceTree = "<group>"; };
+		093064C11C7A551800E80F76 /* FilmViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmViewProtocol.swift; path = Source/Films/View/FilmViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				093064A81C7A520C00E80F76 /* FilmViewController.swift */,
+				093064C11C7A551800E80F76 /* FilmViewProtocol.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			files = (
 				093064A91C7A520C00E80F76 /* FilmViewController.swift in Sources */,
 				093064A71C7A520C00E80F76 /* AppDelegate.swift in Sources */,
+				093064C21C7A551800E80F76 /* FilmViewProtocol.swift in Sources */,
 				093064C01C7A543700E80F76 /* FilmPresenter.swift in Sources */,
 				093064BD1C7A53B400E80F76 /* FilmRouter.swift in Sources */,
 			);
