@@ -59,5 +59,7 @@ extension FilmViewController: UITableViewDataSource {
 }
 
 extension FilmViewController: FilmViewProtocol {
-    
+    func presentFilms(films: [FilmDisplay]) {
+        
+    }
 }

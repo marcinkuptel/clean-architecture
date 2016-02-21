@@ -21,10 +21,10 @@ class FilmInteractor {
     }
     
     func fetchingNominatedFilmsSucceeded(films: [Film]){
-        
+        presenter.fetchingNominatedFilmsSucceeded(films)
     }
     
     func fetchingNominatedFilmsFailed(){
-        
+        presenter.fetchingNominatedFilmsFailed()
     }
 }

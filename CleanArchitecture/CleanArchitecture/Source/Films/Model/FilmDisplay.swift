@@ -1,5 +1,5 @@
 //
-//  FilmViewProtocol.swift
+//  FilmDisplay.swift
 //  CleanArchitecture
 //
 //  Created by Marcin Kuptel on 21/02/2016.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol FilmViewProtocol: class {
-    func presentFilms(films: [FilmDisplay])
+struct FilmDisplay {
+    
 }
