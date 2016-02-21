@@ -12,6 +12,7 @@
 		093064AC1C7A520C00E80F76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093064AA1C7A520C00E80F76 /* Main.storyboard */; };
 		093064AE1C7A520C00E80F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093064AD1C7A520C00E80F76 /* Assets.xcassets */; };
 		093064B11C7A520C00E80F76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093064AF1C7A520C00E80F76 /* LaunchScreen.storyboard */; };
+		093064BD1C7A53B400E80F76 /* FilmRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064BC1C7A53B400E80F76 /* FilmRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		093064AD1C7A520C00E80F76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		093064B01C7A520C00E80F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		093064B21C7A520C00E80F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		093064BC1C7A53B400E80F76 /* FilmRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmRouter.swift; path = Source/Films/Router/FilmRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		093064B81C7A528000E80F76 /* Films */ = {
 			isa = PBXGroup;
 			children = (
+				093064BB1C7A53A200E80F76 /* Router */,
 				093064BA1C7A535800E80F76 /* View */,
 			);
 			name = Films;
@@ -86,6 +89,14 @@
 				093064A81C7A520C00E80F76 /* FilmViewController.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		093064BB1C7A53A200E80F76 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				093064BC1C7A53B400E80F76 /* FilmRouter.swift */,
+			);
+			name = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 			files = (
 				093064A91C7A520C00E80F76 /* FilmViewController.swift in Sources */,
 				093064A71C7A520C00E80F76 /* AppDelegate.swift in Sources */,
+				093064BD1C7A53B400E80F76 /* FilmRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
