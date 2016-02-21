@@ -12,6 +12,11 @@ class FilmPresenter {
     weak var view: FilmViewProtocol!
     private let router: FilmRouter
     private let interactor: FilmInteractor
+    private static let dataFormatter: NSDateFormatter = {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "dd'-'MM'-'yyyy"
+        return formatter
+    }()
     
     init(router r: FilmRouter, interactor i: FilmInteractor){
         router = r
@@ -26,7 +31,7 @@ class FilmPresenter {
 extension FilmPresenter: FilmPresenterProtocol {
     func fetchingNominatedFilmsSucceeded(films: [Film]) {
         let converted = films.map {
-            FilmDisplay(title: $0.title, releaseDate:  "111")
+            FilmDisplay(title: $0.title, releaseDate:  FilmPresenter.dataFormatter.stringFromDate($0.releaseDate))
         }
         view.presentFilms(converted)
     }
