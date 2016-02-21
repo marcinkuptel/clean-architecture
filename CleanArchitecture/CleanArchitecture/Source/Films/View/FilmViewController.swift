@@ -11,6 +11,7 @@ import UIKit
 class FilmViewController: UIViewController {
 
     let presenter: FilmPresenter
+    private var tableView: UITableView!
     
     init(presenter p: FilmPresenter){
         presenter = p
@@ -23,12 +24,36 @@ class FilmViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        createAndAddTableView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    private func createAndAddTableView(){
+        tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.dataSource = self
+        view.addSubview(tableView)
+        
+        let left = tableView.leftAnchor.constraintEqualToAnchor(view.leftAnchor)
+        let top = tableView.topAnchor.constraintEqualToAnchor(view.topAnchor)
+        let bottom = tableView.bottomAnchor.constraintEqualToAnchor(view.bottomAnchor)
+        let right = tableView.rightAnchor.constraintEqualToAnchor(view.rightAnchor)
+        
+        NSLayoutConstraint.activateConstraints([top, left, bottom, right])
+    }
+}
+
+extension FilmViewController: UITableViewDataSource {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        return UITableViewCell()
     }
 }
 
