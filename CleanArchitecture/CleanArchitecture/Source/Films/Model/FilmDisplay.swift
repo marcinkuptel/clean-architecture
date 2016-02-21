@@ -9,5 +9,6 @@
 import Foundation
 
 struct FilmDisplay {
-    
+    let title: String
+    let releaseDate: String
 }

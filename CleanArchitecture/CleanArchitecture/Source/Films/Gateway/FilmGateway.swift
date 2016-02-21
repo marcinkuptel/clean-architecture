@@ -14,6 +14,9 @@ class FilmGateway {
 
 extension FilmGateway: FilmGatewayProtocol {
     func fetchNominatedFilms() {
-        interactor.fetchingNominatedFilmsSucceeded([])
+        let films = [
+            Film(title: "The Revenant", releaseDate: NSDate(timeIntervalSince1970: 1453370425))
+        ]
+        interactor.fetchingNominatedFilmsSucceeded(films)
     }
 }

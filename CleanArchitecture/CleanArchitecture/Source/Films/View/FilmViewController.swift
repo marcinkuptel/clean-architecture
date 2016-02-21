@@ -12,6 +12,7 @@ class FilmViewController: UIViewController {
 
     let presenter: FilmPresenter
     private var tableView: UITableView!
+    private var films: [FilmDisplay] = []
     
     init(presenter p: FilmPresenter){
         presenter = p
@@ -24,6 +25,7 @@ class FilmViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.whiteColor()
         createAndAddTableView()
         presenter.viewDidLoad()
     }
@@ -40,7 +42,7 @@ class FilmViewController: UIViewController {
         view.addSubview(tableView)
         
         let left = tableView.leftAnchor.constraintEqualToAnchor(view.leftAnchor)
-        let top = tableView.topAnchor.constraintEqualToAnchor(view.topAnchor)
+        let top = tableView.topAnchor.constraintEqualToAnchor(view.topAnchor, constant: 20)
         let bottom = tableView.bottomAnchor.constraintEqualToAnchor(view.bottomAnchor)
         let right = tableView.rightAnchor.constraintEqualToAnchor(view.rightAnchor)
         
@@ -50,16 +52,27 @@ class FilmViewController: UIViewController {
 
 extension FilmViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return films.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        var cell = tableView.dequeueReusableCellWithIdentifier("filmCell")
+        if cell == nil {
+            cell = UITableViewCell(style: .Subtitle, reuseIdentifier: "filmCell")
+        }
+        
+        let film = films[indexPath.row]
+        cell?.textLabel?.text = film.title
+        cell?.detailTextLabel?.text = film.releaseDate
+        
+        return cell!
     }
 }
 
 extension FilmViewController: FilmViewProtocol {
     func presentFilms(films: [FilmDisplay]) {
-        
+        self.films = films
+        tableView.reloadData()
     }
 }

@@ -25,7 +25,10 @@ class FilmPresenter {
 
 extension FilmPresenter: FilmPresenterProtocol {
     func fetchingNominatedFilmsSucceeded(films: [Film]) {
-        
+        let converted = films.map {
+            FilmDisplay(title: $0.title, releaseDate:  "111")
+        }
+        view.presentFilms(converted)
     }
     
     func fetchingNominatedFilmsFailed() {
