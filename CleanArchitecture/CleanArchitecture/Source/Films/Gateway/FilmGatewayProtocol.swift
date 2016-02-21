@@ -1,5 +1,5 @@
 //
-//  FilmGateway.swift
+//  FilmGatewayProtocol.swift
 //  CleanArchitecture
 //
 //  Created by Marcin Kuptel on 21/02/2016.
@@ -8,10 +8,6 @@
 
 import Foundation
 
-class FilmGateway {
-    weak var interactor: FilmInteractor!
-}
-
-extension FilmGateway: FilmGatewayProtocol {
+protocol FilmGatewayProtocol: class {
     
 }

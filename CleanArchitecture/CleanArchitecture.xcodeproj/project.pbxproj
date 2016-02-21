@@ -18,6 +18,7 @@
 		093064C51C7A566600E80F76 /* FilmInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064C41C7A566600E80F76 /* FilmInteractor.swift */; };
 		093064C71C7A568800E80F76 /* FilmPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064C61C7A568800E80F76 /* FilmPresenterProtocol.swift */; };
 		093064CA1C7A572200E80F76 /* FilmGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064C91C7A572200E80F76 /* FilmGateway.swift */; };
+		093064CC1C7A574500E80F76 /* FilmGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064CB1C7A574500E80F76 /* FilmGatewayProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		093064C41C7A566600E80F76 /* FilmInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmInteractor.swift; path = Source/Films/Interactor/FilmInteractor.swift; sourceTree = "<group>"; };
 		093064C61C7A568800E80F76 /* FilmPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmPresenterProtocol.swift; path = Source/Films/Presenter/FilmPresenterProtocol.swift; sourceTree = "<group>"; };
 		093064C91C7A572200E80F76 /* FilmGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmGateway.swift; path = Source/Films/Gateway/FilmGateway.swift; sourceTree = "<group>"; };
+		093064CB1C7A574500E80F76 /* FilmGatewayProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmGatewayProtocol.swift; path = Source/Films/Gateway/FilmGatewayProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				093064C91C7A572200E80F76 /* FilmGateway.swift */,
+				093064CB1C7A574500E80F76 /* FilmGatewayProtocol.swift */,
 			);
 			name = Gateway;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			files = (
 				093064C71C7A568800E80F76 /* FilmPresenterProtocol.swift in Sources */,
 				093064A91C7A520C00E80F76 /* FilmViewController.swift in Sources */,
+				093064CC1C7A574500E80F76 /* FilmGatewayProtocol.swift in Sources */,
 				093064A71C7A520C00E80F76 /* AppDelegate.swift in Sources */,
 				093064C21C7A551800E80F76 /* FilmViewProtocol.swift in Sources */,
 				093064C01C7A543700E80F76 /* FilmPresenter.swift in Sources */,

@@ -10,4 +10,9 @@ import Foundation
 
 class FilmInteractor {
     weak var presenter: FilmPresenterProtocol!
+    private let gateway: FilmGatewayProtocol
+    
+    init(gateway g: FilmGatewayProtocol){
+        gateway = g
+    }
 }
