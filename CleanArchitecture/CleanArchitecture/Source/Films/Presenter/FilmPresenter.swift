@@ -24,5 +24,11 @@ class FilmPresenter {
 }
 
 extension FilmPresenter: FilmPresenterProtocol {
+    func fetchingNominatedFilmsSucceeded(films: [Film]) {
+        
+    }
     
+    func fetchingNominatedFilmsFailed() {
+        
+    }
 }

@@ -9,5 +9,6 @@
 import Foundation
 
 protocol FilmPresenterProtocol: class {
-    
+    func fetchingNominatedFilmsSucceeded(films: [Film])
+    func fetchingNominatedFilmsFailed()
 }

@@ -19,4 +19,12 @@ class FilmInteractor {
     func fetchNominatedFilms(){
         gateway.fetchNominatedFilms()
     }
+    
+    func fetchingNominatedFilmsSucceeded(films: [Film]){
+        
+    }
+    
+    func fetchingNominatedFilmsFailed(){
+        
+    }
 }
