@@ -19,6 +19,7 @@
 		093064C71C7A568800E80F76 /* FilmPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064C61C7A568800E80F76 /* FilmPresenterProtocol.swift */; };
 		093064CA1C7A572200E80F76 /* FilmGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064C91C7A572200E80F76 /* FilmGateway.swift */; };
 		093064CC1C7A574500E80F76 /* FilmGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064CB1C7A574500E80F76 /* FilmGatewayProtocol.swift */; };
+		093064D01C7A5B2200E80F76 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093064CF1C7A5B2200E80F76 /* Film.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		093064C61C7A568800E80F76 /* FilmPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmPresenterProtocol.swift; path = Source/Films/Presenter/FilmPresenterProtocol.swift; sourceTree = "<group>"; };
 		093064C91C7A572200E80F76 /* FilmGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmGateway.swift; path = Source/Films/Gateway/FilmGateway.swift; sourceTree = "<group>"; };
 		093064CB1C7A574500E80F76 /* FilmGatewayProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmGatewayProtocol.swift; path = Source/Films/Gateway/FilmGatewayProtocol.swift; sourceTree = "<group>"; };
+		093064CF1C7A5B2200E80F76 /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Film.swift; path = Source/Films/Model/Film.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		093064B81C7A528000E80F76 /* Films */ = {
 			isa = PBXGroup;
 			children = (
+				093064CE1C7A5B1200E80F76 /* Model */,
 				093064C81C7A571200E80F76 /* Gateway */,
 				093064C31C7A565400E80F76 /* Interactor */,
 				093064BE1C7A542400E80F76 /* Presenter */,
@@ -139,6 +142,14 @@
 				093064CB1C7A574500E80F76 /* FilmGatewayProtocol.swift */,
 			);
 			name = Gateway;
+			sourceTree = "<group>";
+		};
+		093064CE1C7A5B1200E80F76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				093064CF1C7A5B2200E80F76 /* Film.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +228,7 @@
 				093064CC1C7A574500E80F76 /* FilmGatewayProtocol.swift in Sources */,
 				093064A71C7A520C00E80F76 /* AppDelegate.swift in Sources */,
 				093064C21C7A551800E80F76 /* FilmViewProtocol.swift in Sources */,
+				093064D01C7A5B2200E80F76 /* Film.swift in Sources */,
 				093064C01C7A543700E80F76 /* FilmPresenter.swift in Sources */,
 				093064C51C7A566600E80F76 /* FilmInteractor.swift in Sources */,
 				093064CA1C7A572200E80F76 /* FilmGateway.swift in Sources */,
