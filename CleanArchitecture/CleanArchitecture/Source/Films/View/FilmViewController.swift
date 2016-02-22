@@ -10,10 +10,13 @@ import UIKit
 
 class FilmViewController: UIViewController {
 
+    //1.
     let presenter: FilmPresenter
+    
     private var tableView: UITableView!
     private var films: [FilmDisplay] = []
     
+    //2.
     init(presenter p: FilmPresenter){
         presenter = p
         super.init(nibName: nil, bundle: nil)
@@ -23,6 +26,7 @@ class FilmViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //3.
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.whiteColor()
@@ -70,6 +74,7 @@ extension FilmViewController: UITableViewDataSource {
     }
 }
 
+//4.
 extension FilmViewController: FilmViewProtocol {
     func presentFilms(films: [FilmDisplay]) {
         self.films = films

@@ -8,7 +8,8 @@
 
 import Foundation
 
-class FilmInteractor {
+class FilmInteractor
+{
     weak var presenter: FilmPresenterProtocol!
     private let gateway: FilmGatewayProtocol
     

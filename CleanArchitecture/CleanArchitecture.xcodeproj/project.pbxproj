@@ -85,11 +85,11 @@
 			isa = PBXGroup;
 			children = (
 				093064CE1C7A5B1200E80F76 /* Model */,
-				093064C81C7A571200E80F76 /* Gateway */,
-				093064C31C7A565400E80F76 /* Interactor */,
+				093064BA1C7A535800E80F76 /* View */,
 				093064BE1C7A542400E80F76 /* Presenter */,
 				093064BB1C7A53A200E80F76 /* Router */,
-				093064BA1C7A535800E80F76 /* View */,
+				093064C31C7A565400E80F76 /* Interactor */,
+				093064C81C7A571200E80F76 /* Gateway */,
 			);
 			name = Films;
 			sourceTree = "<group>";
@@ -384,6 +384,7 @@
 				093064B71C7A520C00E80F76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,7 +12,8 @@ class FilmRouter {
     
     weak var controller: FilmViewController!
     
-    class func createFilmViewController() -> FilmViewController {
+    class func createFilmViewController() -> FilmViewController
+    {
         let router = FilmRouter()
         let gateway = FilmGateway()
         let interactor = FilmInteractor(gateway: gateway)
