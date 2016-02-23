@@ -11,7 +11,7 @@ import Foundation
 class FilmPresenter
 {
     //1.
-    weak var view: FilmViewProtocol!
+    weak var view: FilmViewProtocol?
     private let router: FilmRouter
     private let interactor: FilmInteractor
     
@@ -44,7 +44,7 @@ extension FilmPresenter: FilmPresenterProtocol
                 title: $0.title,
                 releaseDate:  FilmPresenter.dataFormatter.stringFromDate($0.releaseDate))
         }
-        view.presentFilms(converted)
+        view?.presentFilms(converted)
     }
     
     func fetchingNominatedFilmsFailed() {

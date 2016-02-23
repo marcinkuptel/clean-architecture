@@ -9,7 +9,7 @@
 import Foundation
 
 class FilmGateway {
-    weak var interactor: FilmInteractor!
+    weak var interactor: FilmInteractor?
 }
 
 extension FilmGateway: FilmGatewayProtocol
@@ -26,6 +26,6 @@ extension FilmGateway: FilmGatewayProtocol
             Film(title: "Brooklyn", releaseDate: NSDate(timeIntervalSince1970: 1455184800)),
             Film(title: "Room", releaseDate: NSDate(timeIntervalSince1970: 1458208800))
         ]
-        interactor.fetchingNominatedFilmsSucceeded(films)
+        interactor?.fetchingNominatedFilmsSucceeded(films)
     }
 }

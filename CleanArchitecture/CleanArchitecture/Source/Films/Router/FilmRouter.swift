@@ -10,7 +10,7 @@ import Foundation
 
 class FilmRouter {
     
-    weak var controller: FilmViewController!
+    weak var controller: FilmViewController?
     
     class func createFilmViewController() -> FilmViewController
     {
